@@ -1,11 +1,11 @@
-const fs = require('fs'); 
- 
-var directory = './blog-posts'; 
- 
-fs.readdir(directory, (err, files) => { 
-	if(err) { 
-		// handle error; e.g., folder didn't exist 
-	} 
-	// 'files' is an array of the files found in the directory 
-	console.log(files)
-});
+let blogArray = []; //Define array of posts
+
+//loop through all posts
+for (i = 1; i < (2); i++) {
+	blogArray.push("/blog-posts/Thisis" + i + ".html"); //Add to array
+}
+
+document.getElementById("blogposts").innerHTML ="<a href="+blogArray+"/>"
+
+
+console.log(blogArray)
