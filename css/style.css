@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,900;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap');
-
 /* #RESET */
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -371,11 +368,18 @@ textarea {
 }
 /* END RESET */
 
+/* #FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,900;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
 :root{
 	--main: #111516 ;
 	--sub: #5299D3 ;
 	--text:#E6EBE0 ;
 	--link: #ED6A5A;
+	--light: #fff;
+	--dark: #000;
 
  	--color:7, 80%; /*the base color*/
   --l:64%; /*the initial lightness*/
@@ -384,7 +388,7 @@ textarea {
   --link-darkest: hsl(var(--color),calc(var(--l) - 30%));
 
 	--heading-font: 'Montserrat', sans-serif;
-	--body-font: 'Playfair Display', serif; ;
+	--body-font: 'Merriweather', serif;
 }
 
 /* #GENERAL */
@@ -411,21 +415,22 @@ nav ul li{
 	margin: 20px 0;
 }
 
-nav ul li a{
-	text-decoration: none;
+nav ul li:first-of-type{
+	margin: 0;
 }
 
-nav ul li a:hover{
-	text-decoration: none;
-}
-
-a{
-	transition: 0.5s;
+nav ul li a, a.backHome, #who a{
 	color: var(--link);
+	text-decoration: none;
 }
 
-a:hover{
-	transition: 0.5s;
+a.backHome{
+	font-size: 1.2em;
+	margin-top: 50px;
+	display: inline-block;
+}
+
+nav ul li a:hover, a.backHome:hover, #who a:hover{
 	color: var(--link-darkest);
 }
 
@@ -436,6 +441,7 @@ h1, h2, h3, h4{
 h1{
 	width: 600px;
 	font-size: 5em;
+	font-weight: 900;
 }
 
 main + div, div + div, figure + figure{
@@ -446,39 +452,63 @@ div + div{
 	margin: 100px 0;
 }
 
-figure{
-	margin: 50px 0;
-	width: 100%;
+p + p{
+	margin: 20px 0;
+}
+
+section{
 	display: flex;
 	font-size: 2em;
+	margin: 100px 0;
+	align-content: flex-end;
 }
 
-figure img{
+section a{
+	padding: 0.5em;
+	margin-top: 10px;
+	color: var(--link);
+	text-decoration: none;
+	display: inline-block;
+	background-color: var(--light);
+	font-family: var(--heading-font);
+}
+
+section a:hover{
+	color: var(--light);
+	background-color: var(--link);
+}
+
+section img{
 	max-width: 100%;
+	height: 200px;
 }
 
-figure div{
+section .summary{
+	font-size: 0.8em;
+	font-weight: 300;
 	margin-left: 20px;
-	align-self: flex-end;
+	line-height: 1.1em;
 }
 
-figure p a{
+section .summary h2{
+	font-weight: 900;
+	font-size: 1.1em;
+	color: var(--link);
+}
+
+section p a{
+	font-size: 0.8em;
 	font-weight: 600;
 }
 
-figcaption{
-	margin-top: 20px;
-	font-size: 0.6em;
-	font-weight: 300;
+/* #WHY & #WHO */
+#why h1, #who h1{
+	margin-bottom: 50px;
 }
 
-/* #WHY */
-#why h1{
-	margin-bottom: 50px;
-}
-/* #WHO */
-#who h1{
-	margin-bottom: 50px;
+#why p, #who p{
+	line-height: 1.2em;
+	font-size: 1.8em;
 }
 
 /* #POSTS */
@@ -487,12 +517,12 @@ figcaption{
 }
 
 .note-wrapper p{
-	font-size: 30px;
+	font-size: 2em;
 	line-height: 1.5em;
-	letter-spacing: 1px;
+	letter-spacing: 0.02em;
 }
 
-@media (max-width: 650px) { 
+@media (max-width: 845px) { 
 	body{
 		width:90vw;
 	}
@@ -507,12 +537,16 @@ figcaption{
 	}
 
 	.note-wrapper p{
-		font-size: 25px;
+		font-size: 1.7em;
 	}
 
 	nav ul li{
 		display: inline-block;
 		padding: 0 10px;
+	}
+
+	nav ul li:first-of-type{
+		padding: 0;
 	}
 }
 
