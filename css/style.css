@@ -376,7 +376,7 @@ textarea {
 :root{
 	--main: #111516 ;
 	--sub: #5299D3 ;
-	--text:#E6EBE0 ;
+	--text:#c8cfbe ;
 	--link: #ED6A5A;
 	--light: #fff;
 	--dark: #000;
@@ -407,6 +407,11 @@ header{
 	justify-content: space-between;
 }
 
+strong{
+	font-size: 1.5em;
+	display: block;
+	font-weight: 900;
+}
 nav{
 	font-size: 2em;
 }
@@ -419,7 +424,7 @@ nav ul li:first-of-type{
 	margin: 0;
 }
 
-nav ul li a, a.backHome, #who a{
+nav ul li a, a.backHome, #who a, .note-wrapper a{
 	color: var(--link);
 	text-decoration: none;
 }
@@ -430,7 +435,7 @@ a.backHome{
 	display: inline-block;
 }
 
-nav ul li a:hover, a.backHome:hover, #who a:hover{
+nav ul li a:hover, a.backHome:hover, #who a:hover, .note-wrapper a:hover{
 	color: var(--link-darkest);
 }
 
@@ -522,6 +527,11 @@ section p a{
 	letter-spacing: 0.02em;
 }
 
+.note-wrapper img{
+	margin: 50px 0;
+	max-width: 100%;
+}
+
 @media (max-width: 845px) { 
 	body{
 		width:90vw;
@@ -536,7 +546,7 @@ section p a{
 	}
 
 	.note-wrapper h1{
-		width: 100vw;
+		width: 80vw;
 		font-size: 3em;
 	}
 
