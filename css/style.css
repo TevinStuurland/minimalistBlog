@@ -474,6 +474,7 @@ section a{
 	color: var(--link);
 	text-decoration: none;
 	display: inline-block;
+	border-radius: 2px;
 	background-color: var(--light);
 	font-family: var(--heading-font);
 }
