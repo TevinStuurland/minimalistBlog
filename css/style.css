@@ -392,6 +392,11 @@ textarea {
 }
 
 /* #GENERAL */
+::selection{
+	background: var(--link-darkest);
+	text-shadow: var(--dark) 1px 1px;
+}
+
 body{
 	width: 80vw;
 	margin: 0 auto;
@@ -526,6 +531,10 @@ section p a{
 	font-size: 2em;
 	line-height: 1.5em;
 	letter-spacing: 0.02em;
+}
+
+.note-wrapper:last-of-type{
+	margin-bottom: 50px;
 }
 
 .note-wrapper img{
