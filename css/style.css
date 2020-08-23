@@ -381,6 +381,7 @@ textarea {
 	--dark: #000;
 
 	--passion: #6D5AED;
+	--passion-dark: #352A80;
 	--interview: #5AEDBA;
 	--knowledge: #5299D3;
 
@@ -432,18 +433,18 @@ nav ul li:first-of-type{
 	margin: 0;
 }
 
-nav ul li a, a.backHome, #who a, .note-wrapper a{
+nav ul li a, a#backHome, #who a, .note-wrapper a{
 	color: var(--link);
 	text-decoration: none;
 }
 
-a.backHome{
+a#backHome{
 	font-size: 1.2em;
 	margin-top: 50px;
 	display: inline-block;
 }
 
-nav ul li a:hover, a.backHome:hover, #who a:hover, .note-wrapper a:hover{
+nav ul li a:hover, a#backHome:hover, #who a:hover, .note-wrapper a:hover{
 	color: var(--link-darkest);
 }
 
@@ -492,12 +493,20 @@ section a:hover{
 	background-color: var(--link);
 }
 
-.passion{
+.passion-button{
 	color: var(--passion);
 }
 
-.passion:hover{
+.passion-button:hover{
 	background-color: var(--passion);
+}
+
+.passion{
+	color: var(--passion)!important;
+}
+
+.passion:hover{
+	color: var(--passion-dark)!important;
 }
 
 section img{
@@ -591,6 +600,10 @@ b {
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 0.8em; /* Also needed for space (tweak if needed) */
   margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.note-wrapper ul.second li::before{
+	color:var(--passion);
 }
 
 @media (max-width: 845px) { 
