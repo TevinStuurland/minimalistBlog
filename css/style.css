@@ -375,11 +375,14 @@ textarea {
 
 :root{
 	--main: #111516 ;
-	--sub: #5299D3 ;
 	--text:#c8cfbe ;
 	--link: #ED6A5A;
 	--light: #fff;
 	--dark: #000;
+
+	--passion: #6D5AED;
+	--interview: #5AEDBA;
+	--knowledge: #5299D3;
 
  	--color:7, 80%; /*the base color*/
   --l:64%; /*the initial lightness*/
@@ -489,6 +492,14 @@ section a:hover{
 	background-color: var(--link);
 }
 
+.passion{
+	color: var(--passion);
+}
+
+.passion:hover{
+	background-color: var(--passion);
+}
+
 section img{
 	max-width: 100%;
 	height: 120px;
@@ -523,8 +534,22 @@ section p a{
 }
 
 /* #POSTS */
+b {
+	font-weight: 600;
+}
+
+
 .note-wrapper h1{
 	margin: 50px 0;
+}
+
+.note-wrapper h2{
+	font-size: 2em;
+	margin: 50px 0;
+	padding: 20px 0;
+	font-weight: 600;
+	border-top: 3px solid var(--text);
+	border-bottom: 3px solid var(--text);
 }
 
 .note-wrapper p{
@@ -537,9 +562,35 @@ section p a{
 	margin-bottom: 50px;
 }
 
+.note-wrapper figure figcaption{
+	font-size: 1.2em;
+	font-style: italic;
+	margin-top: -40px;
+	margin-bottom: 60px!important;
+}
+
 .note-wrapper img{
 	margin: 50px 0;
 	max-width: 100%;
+}
+
+.note-wrapper ul li{
+	font-size: 1.6em;
+	line-height: 1.5em;
+	margin: 30px;
+}
+
+.note-wrapper i{
+	font-style: italic;
+}
+
+.note-wrapper ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: var(--link); /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 0.8em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 
 @media (max-width: 845px) { 
