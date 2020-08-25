@@ -473,8 +473,12 @@ p + p{
 section{
 	display: flex;
 	font-size: 2em;
-	margin: 100px 0;
-	align-content: flex-end;
+	padding: 0.5em;
+	margin: 50px 0;
+	border-radius: 5px;
+	background-color: #111617 ;
+	box-shadow: 0 10px 30px #090B0C;
+	
 }
 
 section a{
