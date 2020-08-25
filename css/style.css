@@ -471,13 +471,19 @@ p + p{
 }
 
 section{
+	padding: 1em;
 	display: flex;
 	font-size: 2em;
-	padding: 1em;
+	transition: 0.5s;
 	margin: 100px 0;
 	border-radius: 5px;
 	background-color: #111617 ;
-	box-shadow: 0 10px 30px #090B0C;
+	box-shadow: 0 10px 30px rgba(9, 11, 12, 0.7);
+}
+
+section:hover{
+	transition: 0.5s;
+	box-shadow: 0 1px 5px rgba(9, 11, 12, 1);
 }
 
 section a{
