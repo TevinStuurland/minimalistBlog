@@ -485,7 +485,7 @@ section{
 	font-size: 2em;
 	transition: 0.5s;
 	margin: 100px 0;
-	border-radius: 5px;
+	border-radius: 20px;
 	background-color: #1A2023 ;
 	box-shadow: 0 10px 20px rgba(9, 11, 12, 0.4);
 }
@@ -499,7 +499,7 @@ section a{
 	padding: 0.5em;
 	margin-top: 15px;
 	color: var(--link);
-	border-radius: 5px;
+	border-radius: 7px;
 	text-decoration: none;
 	display: inline-block;
 	background-color: var(--light);
