@@ -393,6 +393,8 @@ textarea {
 
 	--heading-font: 'Montserrat', sans-serif;
 	--body-font: 'Merriweather', serif;
+	
+	--border: 25px;
 }
 
 /* #GENERAL */
@@ -484,9 +486,9 @@ section{
 	display: flex;
 	font-size: 2em;
 	transition: 0.5s;
-	margin: 100px 0;
-	border-radius: 20px;
+	margin: 50px 0;
 	background-color: #1A2023 ;
+	border-radius: var(--border, 25px);
 	box-shadow: 0 10px 20px rgba(9, 11, 12, 0.4);
 }
 
@@ -629,8 +631,8 @@ b {
 .endOfPost{
 	padding: 2.5em;
 	transition: 0.5s;
-	border-radius: 5px;
 	background-color: var(--dark);
+	border-radius: var(--border, 25px);
 	box-shadow: 0 10px 20px rgba(5, 5, 5, 0.4);
 }
 
