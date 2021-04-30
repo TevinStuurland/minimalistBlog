@@ -383,7 +383,9 @@ textarea {
 	--passion: #6D5AED;
 	--passion-dark: #352A80;
 	--interview: #5AEDBA;
+	--interview-dark: #1c4436;
 	--knowledge: #5299D3;
+	--knowledge-dark: #182d3d;
 
  	--color:7, 80%; /*the base color*/
   --l:64%; /*the initial lightness*/
@@ -622,6 +624,27 @@ b {
 
 .note-wrapper ul.second li::before{
 	color:var(--passion);
+}
+
+.postMenu a{
+	margin-top: 15px;
+	color: var(--link);
+	border-radius: 7px;
+	padding: 0.5em 0.8em;
+	text-decoration: none;
+	display: inline-block;
+	background-color: var(--light);
+	font-family: var(--heading-font);
+}
+
+.postMenu a:hover{
+	color: var(--light);
+	background-color: var(--link);
+}
+
+section a:hover{
+	color: var(--light);
+	background-color: var(--link);
 }
 
 .endOfPost{
