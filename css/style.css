@@ -468,6 +468,10 @@ h1{
 	letter-spacing: 0.02em;
 }
 
+.first .title, .second .title{
+	display:none;
+}
+
 .summary h2{
 	font-weight: 900;
 	font-size: 1.1em;
@@ -694,6 +698,32 @@ section a:hover{
 
 	nav ul li:first-of-type{
 		padding: 0;
+	}
+}
+
+@media (max-width: 500px) { 
+	section img{
+		display:none;
+	}
+
+	.first .title, .second .title{
+		display:block;
+		margin: 15px 0;
+		font-weight: 600;
+	}
+
+	.first .title{
+		color: var(--link);
+	}
+
+	.second .title{
+		color: var(--passion);
+	}
+
+	.summary{
+		font-size: 0.8em;
+		margin: 0;
+		line-height: 1.1em;
 	}
 }
 
