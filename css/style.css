@@ -502,7 +502,8 @@ section{
 	margin: 50px 0;
 	transition: 0.5s;
 	flex-direction: row-reverse;
-	background-color: #1A2023 ;
+	background-color: #1A2023;
+	justify-content: space-between;
 	border-radius: var(--border, 25px);
 	box-shadow: 0 10px 20px rgba(9, 11, 12, 0.4);
 }
