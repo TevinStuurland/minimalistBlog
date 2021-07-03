@@ -571,6 +571,10 @@ b {
 	font-weight: 600;
 }
 
+.note-wrapper{
+	padding: 40px;
+}
+
 .note-wrapper h1{
 	margin: 50px 0;
 }
@@ -586,7 +590,7 @@ b {
 
 .note-wrapper p{
 	font-size: 2em;
-	margin: 1em 2em;
+	margin: 1em 0;
 	line-height: 1.7em;
 	letter-spacing: 0.02em;
 }
@@ -682,6 +686,10 @@ section a:hover{
 
 	#why p, #who p{
 		font-size: 1.8em;
+	}
+
+	.note-wrapper{
+		padding: 0;
 	}
 
 	.note-wrapper h1{
