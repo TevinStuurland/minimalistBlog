@@ -436,18 +436,22 @@ nav ul li:first-of-type{
 }
 
 nav ul li a, a#backHome, #who a, .note-wrapper a{
-	color: var(--link);
+	color: var(--light);
 	text-decoration: none;
+	padding-bottom: 2px;
+	border-bottom: 2px solid;
 }
 
 a#backHome{
 	font-size: 1.2em;
 	margin-top: 50px;
 	display: inline-block;
+	padding-bottom: 2px;
+	border-bottom: 2px solid;
 }
 
 nav ul li a:hover, a#backHome:hover, #who a:hover, .note-wrapper a:hover{
-	color: var(--link-darkest);
+	color: var(--text);
 }
 
 h1, h2, h3, h4{
@@ -465,10 +469,10 @@ h1{
 	font-weight: 300;
 	margin-right: 20px;
 	line-height: 1.1em;
-	letter-spacing: 0.02em;
+	letter-spacing: 0.01em;
 }
 
-.first .title, .second .title{
+.post .title{
 	display:none;
 }
 
@@ -514,9 +518,10 @@ section:hover{
 }
 
 section a{
+	font-size: 0.6em;
+	font-weight: 600;
 	margin-top: 15px;
-	color: var(--link);
-	border-radius: 7px;
+	border-radius: 15px;
 	padding: 0.5em 0.8em;
 	text-decoration: none;
 	display: inline-block;
@@ -524,17 +529,37 @@ section a{
 	font-family: var(--heading-font);
 }
 
-section a:hover{
+.structurePost a{
+	color: var(--link);
+}
+
+.structurePost a:hover{
 	color: var(--light);
 	background-color: var(--link);
 }
 
-.passion-button{
+.passionPost a{
 	color: var(--passion);
 }
-
-.passion-button:hover{
+.passionPost a:hover{
+	color: var(--light);
 	background-color: var(--passion);
+}
+
+.knowledgePost a{
+	color: var(--knowledge);
+}
+.knowledgePost a:hover{
+	color: var(--light);
+	background-color: var(--knowledge);
+}
+
+.interviewPost a{
+	color: var(--interview);
+}
+.interviewPost a:hover{
+	color: var(--light);
+	background-color: var(--interview);
 }
 
 .passion{
@@ -546,7 +571,7 @@ section a:hover{
 }
 
 .tagsWrapper{
-	margin: 5px 0 25px 0;
+	margin: 5px 0 20px 0;
 }
 
 .tagsWrapper ul{
@@ -556,9 +581,11 @@ section a:hover{
 
 .tagsWrapper ul li{
 	padding: 10px;
-	margin: 10px 10px 0 0;
+	font-size: 0.8em;
 	color: var(--main);
 	border-radius: 15px;
+	margin: 10px 10px 0 0;
+	box-shadow: 0 10px 40px rgba(5, 5, 5, 0.4);
 }
 
 .structurePost .tagsWrapper ul li{
@@ -580,11 +607,6 @@ section a:hover{
 section img{
 	max-width: 100%;
 	height: 152px;
-}
-
-section p a{
-	font-size: 0.6em;
-	font-weight: 600;
 }
 
 /* #WHY & #WHO */
@@ -668,33 +690,22 @@ b {
 	color:var(--passion);
 }
 
-.postMenu a{
-	margin-top: 15px;
-	color: var(--link);
-	border-radius: 7px;
-	padding: 0.5em 0.8em;
-	text-decoration: none;
-	display: inline-block;
-	background-color: var(--light);
-	font-family: var(--heading-font);
-}
-
-.postMenu a:hover{
-	color: var(--light);
-	background-color: var(--link);
-}
-
-section a:hover{
-	color: var(--light);
-	background-color: var(--link);
-}
-
 .endOfPost{
 	padding: 2.5em;
 	transition: 0.5s;
 	background-color: var(--dark);
 	border-radius: var(--border, 25px);
 	box-shadow: 0 10px 20px rgba(5, 5, 5, 0.4);
+}
+
+.endOfPost a{
+	color: var(--light);
+	padding-bottom: 2px;
+	border-bottom: 2px solid;
+}
+
+.endOfPost a:hover{
+	color: var(--text);
 }
 
 .endOfPost:hover{
@@ -749,18 +760,26 @@ section a:hover{
 		display:none;
 	}
 
-	.first .title, .second .title{
+	.post .title{
 		display:block;
 		margin: 15px 0;
 		font-weight: 600;
 	}
 
-	.first .title{
+	.structurePost .title{
 		color: var(--link);
 	}
 
-	.second .title{
+	.passionPost .title{
 		color: var(--passion);
+	}
+
+	.knowledgePost .title{
+		color: var(--knowledge);
+	}
+
+	.interviewPost .title{
+		color: var(--interview);
 	}
 
 	.summary{
