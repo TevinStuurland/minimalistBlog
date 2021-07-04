@@ -445,8 +445,8 @@ nav ul li a, a#backHome, #who a, .note-wrapper a{
 a#backHome{
 	font-size: 1.2em;
 	margin-top: 50px;
-	display: inline-block;
 	padding-bottom: 2px;
+	display: inline-block;
 	border-bottom: 2px solid;
 }
 
@@ -635,17 +635,21 @@ b {
 
 .note-wrapper h2{
 	font-size: 2em;
-	margin: 50px 0;
-	padding: 20px 0;
+	margin: 2em 0 1em 0;
 	font-weight: 600;
-	border-top: 3px solid var(--text);
-	border-bottom: 3px solid var(--text);
+}
+
+.note-wrapper h3{
+	font-size: 1.5em;
+	margin: 2em 0 1em 0;
+	font-weight: 600;
+	font-style: italic;
 }
 
 .note-wrapper p{
 	font-size: 2em;
 	margin: 1em 0;
-	line-height: 1.7em;
+	line-height: 1.5em;
 	letter-spacing: 0.02em;
 }
 
@@ -656,8 +660,9 @@ b {
 .note-wrapper figure figcaption{
 	font-size: 1.2em;
 	margin-top: -50px;
-	font-style: italic;
 	padding-top: 15px;
+	font-style: italic;
+	line-height: 1.5em;
 	margin-bottom: 60px!important;
 	border-top: 1px solid var(--text);
 }
@@ -669,7 +674,7 @@ b {
 
 .note-wrapper ul li{
 	margin: 30px;
-	font-size: 1.6em;
+	font-size: 1.8em;
 	line-height: 1.5em;
 }
 
@@ -679,15 +684,26 @@ b {
 
 .note-wrapper ul li::before {
   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: var(--link); /* Change the color */
   font-weight: bold; /* If you want it to be bold */
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 0.8em; /* Also needed for space (tweak if needed) */
   margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 
-.note-wrapper ul.second li::before{
+.note-wrapper ul.structurePost li::before{
+	color:var(--link);
+}
+
+.note-wrapper ul.passionPost li::before{
 	color:var(--passion);
+}
+
+.note-wrapper ul.knowledgePost li::before{
+	color:var(--knowledge);
+}
+
+.note-wrapper ul.interviewPost li::before{
+	color:var(--interview);
 }
 
 .endOfPost{
@@ -713,6 +729,32 @@ b {
 	box-shadow: 0 1px 2px rgba(5, 5, 5, 1);
 }
 
+.postNavigator{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 0 auto 50px auto;
+}
+
+.postNavigator a{
+	padding: 30px;
+	font-weight: 600;
+	color: #21212B;
+	border-radius: 30px;
+	text-decoration: none;
+	transition: box-shadow 1s;
+	box-shadow: 0 5px 40px rgba(255, 255, 255, 0.4);
+	background: no-repeat center/110% url(../media/case_background.jpg);
+}
+
+.postNavigator a:hover{
+	transition: box-shadow 1s;
+	box-shadow: 0 1px 10px rgba(255, 255, 255, 0.4)
+}
+
+.postNavigator a + a{
+	background: no-repeat center/110% url(../media/case_background_flip.jpg);
+}
 
 @media (max-width: 845px) { 
 	body{
@@ -752,6 +794,19 @@ b {
 
 	nav ul li:first-of-type{
 		padding: 0;
+	}
+
+	.postNavigator{
+		margin: 50px auto;
+		justify-content: space-between;
+	}
+
+	.postNavigator a{
+		width: 100%;
+	}
+
+	.postNavigator a + a{
+		margin-top: 25px;
 	}
 }
 
