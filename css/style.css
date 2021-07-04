@@ -791,6 +791,10 @@ b {
     margin: 1em 0em;
 	}
 
+	.note-wrapper img, .note-wrapper figure figcaption{
+		margin: 0;
+	}
+
 	nav ul li{
 		display: inline-block;
 		padding: 0 10px;
@@ -811,6 +815,11 @@ b {
 
 	.postNavigator a + a{
 		margin-top: 25px;
+	}
+
+	.note-wrapper h1, .note-wrapper h2, .note-wrapper h3{
+		margin: 50px 0 10px 0;
+		line-height: 1.5em;
 	}
 }
 
