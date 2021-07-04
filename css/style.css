@@ -545,6 +545,38 @@ section a:hover{
 	color: var(--passion-dark)!important;
 }
 
+.tagsWrapper{
+	margin: 5px 0 25px 0;
+}
+
+.tagsWrapper ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.tagsWrapper ul li{
+	padding: 10px;
+	margin: 10px 10px 0 0;
+	color: var(--main);
+	border-radius: 15px;
+}
+
+.structurePost .tagsWrapper ul li{
+	background-color: var(--link);
+}
+
+.passionPost .tagsWrapper ul li{
+	background-color: var(--passion);
+}
+
+.knowledgePost .tagsWrapper ul li{
+	background-color: var(--knowledge);
+}
+
+.interviewPost .tagsWrapper ul li{
+	background-color: var(--interview);
+}
+
 section img{
 	max-width: 100%;
 	height: 152px;
@@ -735,6 +767,10 @@ section a:hover{
 		font-size: 0.8em;
 		margin: 0;
 		line-height: 1.1em;
+	}
+
+	.tagsWrapper ul{
+		flex-direction: column;
 	}
 }
 
