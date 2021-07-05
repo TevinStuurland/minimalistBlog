@@ -736,8 +736,8 @@ b {
 .postNavigator{
 	display: flex;
 	flex-wrap: wrap;
+	margin: 20px auto 50px auto;
 	justify-content: space-around;
-	margin: 0 auto 50px auto;
 }
 
 .postNavigator a{
@@ -814,7 +814,7 @@ b {
 	}
 
 	.postNavigator a + a{
-		margin-top: 25px;
+		margin-top: 50px;
 	}
 
 	.note-wrapper h1, .note-wrapper h2, .note-wrapper h3{
