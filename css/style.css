@@ -626,7 +626,8 @@ b {
 }
 
 .note-wrapper{
-	padding: 40px;
+	width: 60vw;
+	margin: 0 auto;
 }
 
 .note-wrapper h1{
@@ -778,7 +779,7 @@ b {
 	}
 
 	.note-wrapper{
-		padding: 0;
+		width: 80vw;
 	}
 
 	.note-wrapper h1{
@@ -823,7 +824,11 @@ b {
 	}
 }
 
-@media (max-width: 500px) { 
+@media (max-width: 500px) {
+	.note-wrapper{
+		width: 90vw;
+	}
+
 	section img{
 		display:none;
 	}
